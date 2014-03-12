@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    db: 'mongodb://localhost/mean',
+    db: MONGOHQ_URL,
     app: {
         name: 'Social Dashboard - Production'
     },
