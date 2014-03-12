@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    db: MONGOHQ_URL,
+    db: process.env.MONGOHQ_URL,
     app: {
         name: 'Social Dashboard - Development'
     },
