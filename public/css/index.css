@@ -160,13 +160,18 @@ a:hover {
 	width: 100%;
 }
 /*SEARCH BLOCK*/
+.ht-block {
+	margin-bottom: 30px;
+}
 .ht-block form {
+	font-family: 'museo';
 	width: 500px;
 	margin: 0 auto;
 }
 .ht-block label {
   font-size: 30px;
   margin-right: 5px;
+  color: #244A71;
 }
 .ht-block input[type="search"] {
   font-size: 30px;
@@ -186,6 +191,9 @@ a:hover {
 }
 .content-filter>div {
 	display: inline-block;
+}
+.content-filter [class^="icon-"]{
+	color: #244A71;
 }
 
 
@@ -208,7 +216,7 @@ section.main-sec .content {
 section.main-sec aside .list {
 	background: #ffffff;
 	border: 1px solid grey;
-	margin-bottom: 20px;
+	margin-bottom: -1px;
 }
 aside .list h2 {
 	margin: 0;
@@ -240,6 +248,13 @@ section.main-sec aside li a:hover {
 }
 section.main-sec aside li a:before {
   content: '#';
+}
+section.main-sec aside .lines {
+    background: url(../img/sprite.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    width: 240px;
 }
 
 /*POSTS*/
