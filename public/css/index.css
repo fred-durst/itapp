@@ -1,147 +1,90 @@
 /*fonts and icons*/
 @font-face {
+  font-family: 'icomon';
+  src:url('../fonts/icomon.eot?hif953');
+  src:url('../fonts/icomon.eot?#iefixhif953') format('embedded-opentype'),
+    url('../fonts/icomon.woff?hif953') format('woff'),
+    url('../fonts/icomon.ttf?hif953') format('truetype'),
+    url('../fonts/icomon.svg?hif953#icomon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\e600";
+}
+.icon-fire:before {
+  content: "\e601";
+}
+.icon-like:before {
+  content: "\e602";
+}
+.icon-vk:before {
+  content: "\e604";
+}
+.icon-facebook:before {
+  content: "\e605";
+}
+.icon-google-plus:before {
+  content: "\e606";
+}
+.icon-picture:before {
+  content: "\e607";
+}
+.icon-film:before {
+  content: "\e608";
+}
+.icon-file-alt:before {
+  content: "\e60c";
+}
+.icon-caret-right:before {
+  content: "\e60d";
+}
+.icon-caret-left:before {
+  content: "\e60e";
+}
+.icon-twitter2:before {
+  content: "\e603";
+}
+.icon-board:before {
+  content: "\e609";
+}
+.icon-user:before {
+  content: "\e60a";
+}
+.icon-search:before {
+  content: "\e60b";
+}
+.icon-instagram:before {
+  content: "\e60f";
+}
+
+
+@font-face {
   font-family: 'museo';
   src: url("../fonts/museosansrounded-300-webfont.eot");
   src: url("../fonts/museosansrounded-300-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosansrounded-300-webfont.woff") format("woff"), url("../fonts/museosansrounded-300-webfont.ttf") format("truetype"), url("../fonts/museosansrounded-300-webfont.svg#museo_sans_rounded300") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'mediafilter';
-  src: url("../fonts/mediafilter.eot");
-  src: url("../fonts/mediafilter.eot#iefix") format("embedded-opentype"), url("../fonts/mediafilter.woff") format("woff"), url("../fonts/mediafilter.ttf") format("truetype"), url("../fonts/mediafilter.svg#mediafilter") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'mediafilter';
-    src: url('../font/mediafilter.svg?19535930#mediafilter') format('svg');
-  }
-}
-*/
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "mediafilter";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-.icon-search:before {
-  content: '\e803';
-}
-
-/* '' */
-.icon-video:before {
-  content: '\e801';
-}
-
-/* '' */
-.icon-picture:before {
-  content: '\e800';
-}
-
-/* '' */
-.icon-doc-text:before {
-  content: '\e802';
-}
-
-/* '' */
-@font-face {
-  font-family: 'social';
-  src: url("../fonts/social.eot");
-  src: url("../fonts/social.eot#iefix") format("embedded-opentype"), url("../fonts/social.woff") format("woff"), url("../fonts/social.ttf") format("truetype"), url("../fonts/social.svg#social") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'social';
-    src: url('../font/social.svg?8020099#social') format('svg');
-  }
-}
-*/
-[class^="icon-social"]:before, [class*=" icon-social"]:before {
-  font-family: "social";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-.icon-socialtwitter:before {
-  content: '\e800';
-}
-
-/* '' */
-.icon-socialfacebook-squared:before {
-  content: '\e805';
-}
-
-/* '' */
-.icon-socialgplus:before {
-  content: '\e801';
-}
-
-/* '' */
-.icon-socialtumblr:before {
-  content: '\e802';
-}
-
-/* '' */
-.icon-socialinstagram:before {
-  content: '\e803';
-}
-
-/* '' */
-.icon-socialvkontakte:before {
-  content: '\e804';
-}
 
 /*global styles*/
 body {
-	 background: url("../img/sitebg.jpg") repeat scroll 0 0 #FFFFFF;
+	 background: #FFFFFF;
 }
 * {
   box-sizing: border-box;
@@ -153,123 +96,194 @@ a {
 a:hover {
   cursor: pointer;
 }
-.container {
-	margin: 0 auto;
-	max-width: 960px;
-	padding: 10px;
-	width: 100%;
+/*HEADER*/
+.navbar {
+  background: #61b0e9;
+  color: #ffffff;
+  height: 30px;
+}
+.navbar div:first-child {
+  text-align: right;
+  padding-right: 75px;
+}
+.navbar ul {
+padding-left: 0;
+text-align: center;
+list-style-type: none;
+vertical-align: top;
+margin: 5px;
+width: 200px;
+}
+.navbar ul li {
+  display: none;
+  background: #61b0e9;
+}
+.navbar ul li:hover, .navbar ul a:hover{
+  background: #6bbef6;
+}
+.navbar ul li:first-child {
+  display: block;
+}
+.navbar ul:hover li{
+  display: block;
+  width: 100%;
+}
+.navbar a{
+  color: #ffffff;
+}
+.navbar-nav {
+  display: inline-block;
+}
+.navbar .user-auth li:first-child ul{
+  display: none;
+}
+.navbar .user-auth:hover li:first-child ul{
+  display: block;
+  margin: 0;
 }
 /*SEARCH BLOCK*/
 .ht-block {
-	margin-bottom: 30px;
+	padding: 10px;
+  background: #3a4450;
+
 }
 .ht-block form {
 	font-family: 'museo';
-	width: 500px;
+	width: 343px;
 	margin: 0 auto;
 }
 .ht-block label {
   font-size: 30px;
-  margin-right: 5px;
-  color: #244A71;
+  background: #3a4450;
+  color: #ffffff;
+  padding: 5px 4px;
+  position: relative;
+  top: 3px;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 .ht-block input[type="search"] {
-  font-size: 30px;
-  padding: 5px;
-  width: 300px;
-  color: rgba(41, 128, 185, 0.9);
+  font-size: 20px;
+  border: 0;
+  width: 275px;
+  height: 41px;
+  background: #3a4450;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 .ht-block .icon-search {
-  font-size: 30px;
-  margin-left: -3px;
-  padding: 5px 0;
-  color: #ffffff;
-  background: #336699;
+font-size: 33px;
+margin-left: -4px;
+padding: 5px 0;
+color: #ffffff;
+background: #3a4450;
+border: none;
+vertical-align: bottom;
+border-bottom: 1px solid #ffffff;
+border-right: 1px solid #ffffff;
+border-top: 1px solid #ffffff;
 }
-.ht-block .filter {
-  border-right: 1px solid rgba(255, 255, 255, 0.9);
+
+.content-filter {
+  padding: 5px 0 0 0;
 }
 .content-filter>div {
 	display: inline-block;
 }
 .content-filter [class^="icon-"]{
-	color: #244A71;
+	height: 26px;
+color: #ffffff;
+font-size: 22px;
+border: 1px solid #ffffff;
+display: inline-block;
+width: 35px;
+text-align: center;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.content-filter [class^="icon-"]:hover {
+  background: #6bbef6;
+}
+
+.soc-filter {
+  float: right;
+  margin-right: 3px;
 }
 
 
 /* main section styles*/
 section.main-sec aside, section.main-sec .content {
-  display: inline-block;
-  margin-left: -4px;
-  vertical-align: top;
-  font-family: 'museo';
+  font-family: 'Noto Sans', sans-serif;
 }
 section.main-sec aside {
-  width: 238px;
-  position: relative;
+  background: url("../img/bg-sidebar.png") #61b0e9 no-repeat 0 390px;
+  position: absolute;
+  width: 220px;
+  padding: 0 0 70px 0;
+  z-index: 1;
 }
-section.main-sec .content {
-  margin-left: 5%;
-  min-height: 500px;
-  width: 620px;
+section.main-sec aside h2 {
+  display: block;
+  height: 30px;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  
 }
-section.main-sec aside .list {
-	background: #ffffff;
-	border: 1px solid grey;
-	margin-bottom: -1px;
-}
-aside .list h2 {
-	margin: 0;
-	left: -12px;
-	position: absolute;
-	width: 263px;
-	height: 54px;
-	padding: 19px 12px 0px;
-	color: white;
-	font-size: 25px;
-	background: url(../img/sprite.png) 0 -38px no-repeat;
+aside h2 [class^="icon-"] {
+  color: #ffffff;
+  margin: 0 9px;
 }
 section.main-sec aside ul {
   list-style-type: none;
-  padding-left: 0px;
-  margin-top: 50px;
+  padding-left: 0;
 }
-section.main-sec aside li {
-	padding: 10px 30px 13px;
-	margin: 0px;
-	background: url(../img/comment-sep.png) bottom repeat-x;
+section.main-sec aside ul li {
+  padding-left: 20px;
 }
+section.main-sec aside ul a {
+  color: #ffffff;
+  font-size: 14px;
 }
-section.main-sec aside li a {
-  color: #369;
-}
-section.main-sec aside li a:hover {
-  color: #333;
-}
-section.main-sec aside li a:before {
+section.main-sec aside ul a:before {
   content: '#';
+  margin-right: 5px;
 }
-section.main-sec aside .lines {
-    background: url(../img/sprite.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 15px;
-    margin: 0;
-    padding: 0;
-    width: 240px;
+section.main-sec .content {
+  position: absolute;
+
+right: 20px;
+left: 240px;
+width: auto;
+min-width: 600px;
+margin: 0;
+padding: 50px;
+}
+section.main-sec aside ul li:hover {
+  background: #6bbef6;
 }
 
 /*POSTS*/
 .post-container {
-	background-color: #ffffff;
+	
 	border: 1px solid grey;
 	margin-bottom: 20px;
 	position: relative;
+     background: #3a4450;
+
 }
 .post-container p {
 	margin: 0;
+  color: rgb(206, 203, 203);
 }
 .post-data {
 	position: absolute;
-	top: 22px;
+	top: 16px;
 	left: -23px;
 }
 .post-auth-photo, .post-soc {
@@ -278,15 +292,26 @@ section.main-sec aside .lines {
 	margin-bottom: 10px;
 }
 .post-auth-photo {
-	width: 46px;
-	height: 46px;
+	width: 40px;
+	height: 40px;
 	background: red;
+}
+.post-auth-photo img {
+  border: 1px solid #545454;
+  -webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
 }
 .post-soc {
 	margin: 0 auto;
-	width: 23px;
-	height: 23px;
-	background: blue;
+	width: 20px;
+	height: 20px;
+	background: #61b0e9;
+  color: white;
+  text-align: center;
+  -webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
 }
 .post-content {
 	padding: 20px 30px;
