@@ -1,9 +1,9 @@
-<section class="main-sec" data-ng-controller="IndexController">
+<section class="main-sec" ng-controller="IndexController">
 		<div class="ht-block">
 			<form action="#" method="get">
 			<div class="search-block"> 
-				<label for="hashsearch">#</label><input type="search" id="hashsearch" name="hashsearch" placeholder="Enter hashtag"/>
-                <button type="submit" class="icon-search"></button>
+				<label for="hashsearch">#</label><input type="search" id="hashsearch" name="hashsearch" ng-data="$scope.hashsearch" placeholder="Enter hashtag" />
+                <button type="button" class="icon-search" ng-click="search()"></button>
 				
 			</div>
 			<div class="content-filter">
@@ -64,7 +64,8 @@
        		</ul>
         </div>	
 		</aside>
-		<div class="content">
+		<div class="content" id="main-content">
+
 			<div class="post-container">
 				<div class="post-data">
 					<div class="post-auth-photo"><img src="../img/panda.jpg"></div>
@@ -75,9 +76,9 @@
 				</div>
 				<footer class="post-footer">
 					<time datetime="YYYY-MM-DDThh:mm"> 17 December 2020</time>
-
 				</footer>
 			</div>
+			
 			<div class="post-container">
 				<div class="post-data">
 					<div class="post-auth-photo"><img src="../img/panda.jpg"></div>
@@ -91,6 +92,7 @@
 
 				</footer>
 			</div>
+			
 			<div class="post-container">
 				<div class="post-data">
 					<div class="post-auth-photo"><img src="../img/panda.jpg"></div>
@@ -105,6 +107,8 @@
 
 				</footer>
 			</div>
+
+			<button class="post-get-more" id="get-more-button" ng-click="getMore()">Get more</button>
 
 		</div>
 	

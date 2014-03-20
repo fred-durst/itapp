@@ -328,3 +328,12 @@ border-radius: 2px;
 	font-size: 11px;
 	font-style: italic;
 }
+
+.post-get-more {
+  color: #eee;
+  background: #3a4450;
+  border: 1px solid grey;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}

@@ -16,12 +16,17 @@
 
 <!-- Application Services -->
 <script type="text/javascript" src="/js/services/global.js"></script>
+<script type="text/javascript" src="/js/services/TagsManager.js"></script>
+<script type="text/javascript" src="/js/services/interfaces/GooglePlus.js"></script>
 
 <!-- Application Controllers -->
 <script type="text/javascript" src="/js/controllers/index.js"></script>
 <script type="text/javascript" src="/js/controllers/header.js"></script>
 <script type="text/javascript" src="/js/init.js"></script>
 
+<!-- APIs -->
+<script type="text/javascript">handleGooglePlusLoad=function(){document.dispatchEvent(new Event('ON_GOOGLE_PLUS_LOAD'));}</script>
+<script src="https://apis.google.com/js/client.js?onload=handleGooglePlusLoad"></script>
 
 {% if (process.env.NODE_ENV == 'development') %}
     <!-- Livereload script rendered -->
